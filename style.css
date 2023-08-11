@@ -1,22 +1,81 @@
-img {
-    height: 100vh;
-    width: calc(100vh * (2/3));
+@font-face {
+    font-family: Changa;
+    src: url(/home/patrick/fonts/Changa-VariableFont_wght.ttf);
 }
 
 body {
     display: flex;
     justify-content: center;
-    width: 75vw;
+    background-color: darkslategray;
 }
 
+.content {
+    display: flex;
+    width: 70vw;
+    background-color: wheat;
+}
+
+img {
+    height: 98vh;
+    width: calc(100vh * (2/3));
+}
+
+.image {
+    position: relative;
+    color: white;
+    display: flex;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: Changa;
+    font-size: xx-large;
+    left: calc((100vh * (2/3))/6);
+    position: absolute;
+    opacity: 1;
+}
+
+svg {
+    margin: 8px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    width: calc(100vh * (2/3));
+    height: 132px;
+    background-color: white;
+    opacity: .5;
+}
+
+.imgfoot {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.imgfoot, a {
+    color: white;
+}
 
 .info {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Changa;
 }
 
 .greeting {
+    font-size: larger;
+}
 
+
+.greeting, .form, p {
+    margin: 0px 24px 0px 24px;
 
 }
